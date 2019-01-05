@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name = "Showtime Automation" parallel="false">
+
+    <parameter name="url" value="https://www.sho.com/"></parameter>
+
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="cloudEnvName" value="browserstack"/>
+    <parameter name="os" value="MacOS"/>
+    <parameter name="os_version" value="10.14"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="browserVersion" value="60.0"/>
+
+<test name="Showtime Home">
+    <classes>
+        <class name = "TestHome"></class>
+    </classes>
+</test>
+    </suite>
